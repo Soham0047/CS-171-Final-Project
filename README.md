@@ -4,7 +4,7 @@
 - Soham Bhowmick (GitHub: @Soham0047)
 - Lwin Moe (GitHub: @lwinmoelovescoding)
 
-## Description of Question and Research Topic (5 sentences)
+## Description of Question and Research Topic
 We study how well course-level image classifiers can sort common waste types from photos.
 We’ll compare simple CNNs to classical baselines (KNN / Decision Tree / Logistic on color/texture features) and test a small ensemble via majority vote.
 Our datasets combine **TrashNet** (studio images, 6 classes) and a small classification subset from **TACO** (litter “in the wild”) to explore domain shift.
