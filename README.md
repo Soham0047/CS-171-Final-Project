@@ -5,12 +5,18 @@
 - Lwin Moe (GitHub: @lwinmoelovescoding)
 
 ## Description of Question and Research Topic
-We study how well course-level image classifiers can sort common waste types from photos.
-We’ll compare simple CNNs to classical baselines (KNN / Decision Tree / Logistic on color/texture features) and test a small ensemble via majority vote.
-Our datasets combine **TrashNet** (studio images, 6 classes) and a small classification subset from **TACO** (litter “in the wild”) to explore domain shift.
-We will use only techniques from our class (data splits, augmentation, cross-entropy training, BatchNorm/Dropout, learning-rate scheduling).
-We evaluate with clear train/val/test splits, learning curves, confusion matrices, and short error analysis.
-*(Sources: TrashNet; TACO.)*
+
+We were fascinated by the image classification from our Homework 4 bird project and wanted to test a simlar approach for waste tracking and sorting.
+Our goal is to study how well course-level image classifiers can identify common waste types from photos.
+We believe that this can be a step toward future applications that could automatically classify trash to help people dispose of it correctly.
+<br><br>
+For this project, we will compare simple Convolutional Neural Networks (CNNs) with classical baselines such as KNN, Decision Tree, and Logistic Regression using color and texture features. 
+We will also test a small ensemble model through majority voting. 
+Our datasets combine TrashNet (studio images, 6 classes) and a small classification subset from TACO (litter “in the wild”) to examine how domain shift affects performance.
+
+All techniques used will come from our class which includes proper train/validation/test splits, data augmentation, cross-entropy training, Batch Normalization, Dropout, and learning-rate scheduling. 
+We will evaluate performance using learning curves, confusion matrices, and brief error analyses.
+(Sources: TrashNet; TACO.)
 
 ## Project Outline / Plan
 1. **Data setup:** download TrashNet + select TACO categories; resize to a fixed square; compute train mean/std; create stratified train/val/test splits.  
@@ -30,14 +36,14 @@ We evaluate with clear train/val/test splits, learning curves, confusion matrice
 
 ## Model Plans
 - **Soham Bhowmick (TrashNet models):**  
-  - Classical: KNN (k∈{3,5,7}), Decision Tree/Logistic on color/texture features.  
-  - CNN: 2–3 conv blocks (Conv→BN→ReLU→Pool), then GAP + Linear(…, 6); light augmentation (flip, ±10°).  
+  - Classical: KNN (k ∈ {3,5,7}), Decision Tree/Logistic on color/texture features.  
+  - CNN: 2–3 conv blocks (Conv -> BN -> ReLU ->Pool), then GAP + Linear(…, 6); light augmentation (flip, ±10 degrees).  
 - **Lwin Moe (TACO models):**  
   - Classical: KNN/Logistic with same features; compare drop from clean (TrashNet) to in-the-wild (TACO).  
   - CNN: same backbone as A; compare augmentation levels and early-stopping patience.  
 
 ## Project Timeline
-- **Week 1:** set up repo; download data; write data prep notebooks; push splits & stats.  
-- **Week 2:** implement classical baselines + feature extraction; first CNN baseline; log curves.  
-- **Week 3:** run ablations; add majority vote; finalize plots and tables.  
-- **Week 4:** polish analysis notebook & slides; finalize README, LICENSE, and reproducibility steps.
+- **Week 1:** Set up repo; download data; write data prep notebooks; push splits & stats. Initial data collections and prep must be done by Oct 30, 2025 (By Nov 1, 2025) 
+- **Week 2:** implement classical baselines + feature extraction; first CNN baseline; log curves. (By Nov 8, 2025) 
+- **Week 3:** run ablations; add majority vote; finalize plots and tables.  (Nov 15, 2025)
+- **Week 4:** polish analysis notebook & slides; finalize README, LICENSE, and reproducibility steps. (Nov 22, 2025
