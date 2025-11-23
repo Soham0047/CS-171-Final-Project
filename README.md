@@ -43,7 +43,7 @@ We will evaluate performance using learning curves, confusion matrices, and brie
   - CNN: same backbone as A; compare augmentation levels and early-stopping patience.  
 
 ## Project Timeline
-- **Week 1:** Set up repo; download data; write data prep notebooks; push splits & stats. Initial data collections and prep must be done by Oct 30, 2025 (By Nov 1, 2025) 
-- **Week 2:** implement classical baselines + feature extraction; first CNN baseline; log curves. (By Nov 8, 2025) 
-- **Week 3:** run ablations; add majority vote; finalize plots and tables.  (Nov 15, 2025)
-- **Week 4:** polish analysis notebook & slides; finalize README, LICENSE, and reproducibility steps. (Nov 22, 2025
+- **Week 1:** Set up repo; download data; write data prep notebooks; push splits & stats. Initial data collections and prep must be done by Nov 23, 2025 (By Nov 23, 2025) 
+- **Week 2:** implement classical baselines + feature extraction; first CNN baseline; log curves. (By Nov 28, 2025) 
+- **Week 3:** run ablations; add majority vote; finalize plots and tables.  (Dec 3, 2025)
+- **Week 4:** polish analysis notebook & slides; finalize README, LICENSE, and reproducibility steps. (Dec 8, 2025)
