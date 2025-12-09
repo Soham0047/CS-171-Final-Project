@@ -205,3 +205,8 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+best_cnn_model.pth
+best_cnn_model.pth
+*.pth
+best_cnn_model.pth
+*.pth
